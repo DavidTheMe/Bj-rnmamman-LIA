@@ -4,6 +4,8 @@ import Header from "./components/Header";
 
 function App() {
   return (
+
+    
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="grow flex flex-col items-center justify-center text-center">
