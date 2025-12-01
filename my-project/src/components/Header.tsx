@@ -6,7 +6,7 @@ function Header() {
     <header className="bg-blue-900 text-white w-max min-w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div className="flex items-center justify-between">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                     <a href="#" className="text-2xl font-bold object-left">Header</a>
                 </div>
 
@@ -26,7 +26,7 @@ function Header() {
                 <div className="md:hidden flex items-center">
                     <button id="menu-button" className="text-white focus:outline-none">
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
