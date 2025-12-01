@@ -16,7 +16,7 @@ function App() {
         imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
       />
       <main className="grow flex flex-col items-center justify-center text-center">
-      <PuffGrid
+        <PuffGrid
 
           items={[
             {
