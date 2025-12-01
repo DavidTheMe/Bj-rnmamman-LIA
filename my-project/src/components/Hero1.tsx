@@ -10,7 +10,7 @@ type HeroProps = {
 function Hero1({ bigText, smallText, imgLink }: HeroProps) {
   return (
     <>
-      <div className="sticky top-0 self-start w-full z-20">
+      <div className="top-0 self-start w-full z-20 mb-8">
         <div className="relative w-full">
           <img
             src={imgLink}
@@ -20,9 +20,9 @@ function Hero1({ bigText, smallText, imgLink }: HeroProps) {
             <h1 className="[text-shadow:0_2px_10px_rgba(0,0,0,1)] text-center">
               {bigText}
             </h1>
-            <h2 className="w-9/12 lg:w-6/12 xl:w-4/12 [text-shadow:0_2px_10px_rgba(0,0,0,1)] text-center">
+            <p className="w-9/12 lg:w-6/12 xl:w-4/12 [text-shadow:0_2px_10px_rgba(0,0,0,1)] text-center">
               {smallText}
-            </h2>
+            </p>
           </div>
         </div>
       </div>

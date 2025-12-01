@@ -9,8 +9,8 @@ type HeroProps = {
 
 function Hero2({ bigText, smallText, imgLink }: HeroProps) {
   return (
-    <div className="sticky top-0 w-full z-20 bg-black">
-      <div className="flex flex-col md:flex-row w-full h-96">
+    <div className="top-0 w-full z-20 bg-black mb-8">
+      <div className="flex flex-col md:flex-row w-full md:h-96">
         
         <div className="w-full md:w-1/2 h-full">
           <img
@@ -24,9 +24,9 @@ function Hero2({ bigText, smallText, imgLink }: HeroProps) {
             <h1 className="[text-shadow:0_2px_10px_rgba(0,0,0,1)]">
               {bigText}
             </h1>
-            <h2 className="w-9/12 [text-shadow:0_2px_10px_rgba(0,0,0,1)] mt-4">
+            <p className="w-9/12 [text-shadow:0_2px_10px_rgba(0,0,0,1)] mt-4">
               {smallText}
-            </h2>
+            </p>
           </div>
         </div>
 

@@ -8,8 +8,8 @@ function Header() {
 
   return (
     <>
-      <header className="bg-black text-white w-max min-w-full max-w-7xl mx-auto">
-        <div className="flex">
+      <header className="sticky top-0 bg-black text-white w-max min-w-full max-w-7xl mx-auto z-50">
+        <div className="flex" >
           <a className="text-2xl font-bold text-center v-full min-v-full flex items-center justify-center px-6">
             <img src="https://skelleftea.se/images/18.57e3b0a17a75fbf0652ca88/1630320903542/skell-eftea.png" alt="Skelefteå logga" className=" h-12 w-auto"/>
           </a>
