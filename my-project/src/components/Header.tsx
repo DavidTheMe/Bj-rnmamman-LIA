@@ -1,45 +1,41 @@
 import "../App.css";
+import "./NavButton";
+import NavButton from "./NavButton";
+import { useState } from "react";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-    <header className="bg-blue-900 text-white w-max min-w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-            <div className="flex items-center justify-between">
-                <div className="flex-shrink-0">
-                    <a href="#" className="text-2xl font-bold object-left">Header</a>
-                </div>
+      <header className="sticky top-0 bg-black text-white w-max min-w-full max-w-7xl mx-auto z-50">
+        <div className="flex" >
+          <a className="text-2xl font-bold text-center v-full min-v-full flex items-center justify-center px-6">
+            <img src="https://skelleftea.se/images/18.57e3b0a17a75fbf0652ca88/1630320903542/skell-eftea.png" alt="Skelefteå logga" className=" h-12 w-auto"/>
+          </a>
 
-                <nav className="hidden md:flex space-x-10 text-lg">
-                    <a href="#" className="hover:text-gray-300 transition-all">Home</a>
-                    <a href="#services" className="hover:text-gray-300 transition-all">Services</a>
-                    <a href="#about" className="hover:text-gray-300 transition-all">About Us</a>
-                    <a href="#contact" className="hover:text-gray-300 transition-all">Contact</a>
-                </nav>
+          <div className="justify-center flex-grow hidden md:flex">
+            <NavButton buttonText="Om oss" href="om-oss" />
+            <NavButton buttonText="Nyheter" href="nyheter" />
+            <NavButton buttonText="Kontakt" href="kontakt" />
+          </div>
 
-                <div className="hidden md:block">
-                    <a href="#contact" className="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
-                        Get in Touch
-                    </a>
-                </div>
-
-                <div className="md:hidden flex items-center">
-                    <button id="menu-button" className="text-white focus:outline-none">
-                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div id="mobile-menu" className="md:hidden mt-5 hidden space-y-4">
-                <a href="#" className="block text-lg hover:text-gray-300 transition-all">Home</a>
-                <a href="#services" className="block text-lg hover:text-gray-300 transition-all">Services</a>
-                <a href="#about" className="block text-lg hover:text-gray-300 transition-all">About Us</a>
-                <a href="#contact" className="block text-lg hover:text-gray-300 transition-all">Contact</a>
-            </div>
+          <div className=" bg-[#985A1C] hover:bg-[#B87F45] m-3 space-y-2 rounded p-4 shadow md:hidden " onClick={() => setMenuOpen(!menuOpen)}>
+            <span className="block h-0.5 w-8 bg-gray-100"></span>
+            <span className="block h-0.5 w-8 bg-gray-100"></span>
+            <span className="block h-0.5 w-8 bg-gray-100"></span>
+          </div>
         </div>
-    </header>
+
+          {menuOpen && (
+            <div className="md:hidden flex flex-col gap-3 bg-black px-6 pb-4 w-full text-center">
+              <NavButton buttonText="Om oss" href="om-oss" />
+              <NavButton buttonText="Nyheter" href="nyheter" />
+              <NavButton buttonText="Kontakt" href="kontakt" />
+            </div>
+          )}
+
+      </header>
     </>
   );
 }
