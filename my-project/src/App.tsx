@@ -9,8 +9,9 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <Hero1
-        bigText="Lorem Ipsum"
-        smallText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat tincidunt magna"
+        navButtonText="Lorem Ipsum"
+        navDestination="Lorem Ipsum"
         imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
       />
       <main className="grow flex flex-col items-center justify-center text-center">
