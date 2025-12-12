@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowRight } from "../icons/ArrowRight";
 
 type ImagePuffProps = {
