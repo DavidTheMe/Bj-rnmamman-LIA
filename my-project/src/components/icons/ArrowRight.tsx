@@ -1,8 +1,8 @@
 import React from "react";
 
-export const ArrowRight = ({ className = "" }) => (
-    <svg
-      className={className}
+export function ArrowRight(props: React.SVGProps<SVGSVGElement>) {
+    return (
+      <svg
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -10,7 +10,9 @@ export const ArrowRight = ({ className = "" }) => (
       aria-hidden="true"
       focusable="false"
       role="presentation"
+      {...props}
     >
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
-);
+    );
+  }
