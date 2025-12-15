@@ -1,54 +1,81 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight } from '../icons/ArrowRight';
+import { ArrowRight } from "../icons/ArrowRight";
 
 type ImagePuffProps = {
+    label: string;
     title: string;
-    subtitle?: string;
     image: string;
     href: string;
 };
 
-export function ImagePuff({ title, subtitle, image, href }: ImagePuffProps) {
+export function ImagePuff({ label, title, image, href }: ImagePuffProps) {
+    const titleId = `${title.replace(/\s+/g, "")}-title`;
     return (
-        <Link
-          to={href}
-          aria-label={`${title}${subtitle ? " - " + subtitle : ""}`}
+      <a
+        href={href}
+        aria-labelledby={titleId}
+        className="
+         group relative block
+         w-full h-[420px]
+         rounded-lg
+         overflow-hidden
+         focus:outline-none focus:ring-2 focus:ring-white/60
+        "
+      >
+        {/* Background Image */}
+        <div
           className="
-            relative group w-full max-w-[350px] h-[300px] mx-auto overflow-hidden
-            focus-outline-none focus:ring-2 focus:ring-white
+           absolute inset-0
+           bg-cover
+           bg-center
+           transition-transform
+           duration-700
+           group-hover:scale-105
           "
-        >
-          {/* Bild */}
-          <img
-            src={image}
-            alt={title}
-            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 duration-300"
+          style={{ backgroundImage: `url(${image})` }}
+          aria-hidden="true"
+        />
+
+        {/* Dark gradient */}
+        <div
+          className="
+           absolute inset-0
+           bg-linear-to-t from-black/70 via-black/25 to-transparent
+           " 
+           aria-hidden="true"
           />
 
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/30"></div>
+        {/* Text */}
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-center px-4">
+          <p className="text-small font-semibold tracking-wider text-white mb-2">
+            {label}
+          </p>
 
-          {/* Text */}
-          <div className="absolute bottom-6 left-6 text-white">
-            {subtitle && (
-                <p className="text-sm font-semibold tracking-wide opacity-80 uppercase">
-                    {subtitle}
-                </p>
-            )}
-            <h2 className="text-2xl font-bold leading-tight max-w-[250px]">
-                {title}
-            </h2>
-          </div>
+          <h2 
+            id={titleId}
+            className="text-xl font-bold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+            {title}
+          </h2>
+        </div>
 
-          {/* Arrow Icon */}
-          < ArrowRight
-            className="
-            absolute bottom-3 right-4 rounded-full bg-[#8B341F] bg-opacity-60 backdrop-blur
-            flex items-center justify-center group-hover:bg-[#8B341F]/80
-            duration-300 w-10 h-10 pointer-events-none
-            " 
-          /> 
-          
-        </Link>
+        {/* Arrow Button */}
+        <div
+          className="
+           absolute bottom-6
+           left-1/2
+           -translate-x-1/2
+           w-12 h-12
+           rounded-full
+           bg-white
+           flex items-center justify-center
+           shadow-lg
+           transition-transfrom
+           duration-300
+           group-hover:scale-110
+          "
+          aria-hidden="true"
+        >
+          <ArrowRight className="w-6 h-6 text-black" stroke="black" />
+        </div>
+      </a>
     );
 }
