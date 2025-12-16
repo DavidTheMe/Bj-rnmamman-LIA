@@ -18,9 +18,8 @@ function Hero1({ text, navButtonText, navDestination, imgLink }: HeroProps) {
           />
         </div>
 
-        <div className="bg-white w-full lg:w-1/3 lg:absolute lg:top-0 lg:mt-[20vh] xl:mt-[45vh] lg:left-0 max-h-60">
+        <div className="bg-white w-full lg:w-1/3 lg:absolute lg:top-0 lg:mt-[20vh] xl:mt-[45vh] lg:left-0 max-h-60 ">
           <div className="flex flex-col mx-24 lg:m-0">
-
             <h2 className="text-black text-center lg:text-left lg:text-4xl m-4 max-h-60 line-clamp-4 mx-16">
               {text}
             </h2>
@@ -40,7 +39,6 @@ function Hero1({ text, navButtonText, navDestination, imgLink }: HeroProps) {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
