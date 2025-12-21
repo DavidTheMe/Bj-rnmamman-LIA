@@ -1,5 +1,6 @@
 import { ArrowRight } from "../icons/ArrowRight";
 
+// Moa
 type WidePuffProps = {
     title: string;
     href: string;
