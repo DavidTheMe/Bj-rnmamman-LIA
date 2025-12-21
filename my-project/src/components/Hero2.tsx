@@ -48,7 +48,7 @@ function Hero2({
               {headerText}
             </h2>
 
-            <h3 className="text-black text-center text-2xl m-4 mx-8">{text}</h3>
+            <h3 className="text-black text-center text-xl m-4 mx-8">{text}</h3>
           </div>
         </div>
       </div>
