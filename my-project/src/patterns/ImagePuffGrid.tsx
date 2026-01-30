@@ -1,5 +1,6 @@
 import { ImagePuff } from '../components/puff/ImagePuff';
 
+// Moa
 type PuffItem = {
     label: string;
     title: string;

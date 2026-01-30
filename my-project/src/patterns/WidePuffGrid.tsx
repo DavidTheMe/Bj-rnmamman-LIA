@@ -1,5 +1,6 @@
 import { WidePuff } from "../components/puff/WidePuff";
 
+// Moa
 type PuffItem = {
     title: string;
     href: string;

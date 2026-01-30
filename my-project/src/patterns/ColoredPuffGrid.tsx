@@ -1,5 +1,6 @@
 import { ColoredPuff } from '../components/puff/ColoredPuff';
 
+// Moa
 type PuffItem = {
     label: string;
     title: string;
