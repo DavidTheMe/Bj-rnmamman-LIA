@@ -21,21 +21,24 @@ function App() {
       <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
         {/* Black and white puff */}
-        <div className="w-full max-w-6xl mx-auto px-4 mt-10 mb-10">
+        <div className="mt-16 w-full max-w-6xl mx-auto px-4">
           <WidePuffGrid
             items={[
               {
                 title: "Lorem Ipsum",
                 href: "#",
+                position: "left",
               },
               {
                 title: "Lorem Ipsum",
                 href: "#",
                 inverted: true,
+                position: "middle",
               },
               {
                 title: "Lorem Ipsum",
                 href: "#",
+                position: "right",
               },
             ]
           }
@@ -47,21 +50,21 @@ function App() {
           <ColoredPuffGrid
             items={[
               {
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
                 label: "Lorem",
                 href: "#",
                 color: "#D3B73D",
                 arrowBackgroundColor: "#721904",
               },
               {
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
                 label: "Lorem",
                 href: "#",
                 color: "#8B341F",
                 arrowBackgroundColor: "#7B932E",
               },
               {
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
                 label: "Lorem",
                 href: "#",
                 color: "#9EB45A",
@@ -79,19 +82,19 @@ function App() {
             items={[
               {
                 label: "Lorem",
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet",
                 image: "/images/Bergnasbron.png",
                 href: "#",
               },
               {
                 label: "Lorem",
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet",
                 image: "/images/Norrsken.png",
                 href: "#",
               },
               {
                 label: "Lorem",
-                title: "Lorem Ipsum",
+                title: "Lorem ipsum dolor sit amet",
                 image: "/images/Kyrkbyn.png",
                 href: "#",
               },

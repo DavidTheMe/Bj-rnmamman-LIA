@@ -5,10 +5,17 @@ type WidePuffProps = {
     title: string;
     href: string;
     inverted?: boolean; // false = black, true = white (the middle puff)
+    position: "left" | "middle" | "right";
 };
 
-export function WidePuff({ title, href, inverted = false }: WidePuffProps) {
+export function WidePuff({ title, href, inverted = false, position }: WidePuffProps) {
     const titleId = `${title.replace(/\s+/g, "")}-title`;
+
+    const positionClasses = {
+        left: "rounded-l-md rounded-r-none",
+        middle: "rounded-none",
+        right: "rounded-r-md rounded-l-none",
+    };
     return (
       <a
         href={href}
@@ -23,6 +30,8 @@ export function WidePuff({ title, href, inverted = false }: WidePuffProps) {
           border border-black
           transition
           focus:outline-none focus:ring-4 focus:ring-black/50
+          ${positionClasses[position]}
+          ${position !== "left" ? "-ml-px" : ""}
           ${inverted ? "bg-white text-black" : "bg-black text-white"}
           `}
     >
