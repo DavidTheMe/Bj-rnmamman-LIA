@@ -1,7 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero1 from "./components/Hero1";
+import Hero2 from "./components/Hero2";
 import TextBox from "./components/TextBox";
 // import { PuffGrid } from "./patterns/PuffGrid";
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
@@ -12,12 +12,15 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <Hero1
-      text="Vi hjälper er att både etablera och utveckla er verksamhet i Skellefteåområdet"
-        navButtonText="Det här kan vi hjälpa till med"
-        navDestination="Lorem Ipsum"
+      <Hero2
+        date="2020-12-22"
+        smallHeaderText="Case Stories"
+        headerText="Campus Skellefteå säkerställer framtidens kunskapsbehov"
+        text="Hella Skellefteå vibrerar. Nya Miljardetableringar med batteritillverkaren Northvolt i spetsen får positiva effekter för näringslivet och det arbetas intensivt för att lösa alltifrån bostadsbehov till rekryteringsfrågor. Mitt i allt detta finns Campus Skellefteå, som får en nyckelroll för att möjliggöra utvecklingen. - Den industri som växer fram här är inte bara ny i Sverige utan hela Europa, vilket självklart påverkar kraven på både forskning och kompetensomvandling, säger Ida Lindh, strategiskt ansvarig på Campus"
+        navButtonText="Till Case Stories"
+        navDestination="Lorem Ipsum "
         imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
-        videoUrl="https://www.youtube.com/watch?v=F5gFwiFIViQ"
+        // videoUrl="https://www.youtube.com/watch?v=F5gFwiFIViQ"
       />
       <main className="grow flex flex-col items-center justify-center text-center">
         <TextBox
@@ -79,7 +82,6 @@ function App() {
           />
         </div>
 
-
         {/* Image Puff */}
 
         <div className="w-full max-w-6xl mx-auto px-4 mt-16 mb-16">
@@ -107,19 +109,17 @@ function App() {
           />
         </div>
 
-
         <TextBox
           title="Lorem ipsum"
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." 
-          />
-        
+          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+        />
+
         <TextBox
           title=""
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." 
-          />
-        
+          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+        />
+
         <Footer role="contentinfo" aria-label="Sidfot" />
-      
       </main>
     </div>
   );
