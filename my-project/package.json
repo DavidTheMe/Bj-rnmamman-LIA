@@ -1,5 +1,6 @@
 {
   "name": "my-project",
+  "homepage": "https://DavidTheMe.github.io/Bj-rnmamman-LIA/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-player": "^3.4.0",

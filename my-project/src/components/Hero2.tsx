@@ -48,17 +48,17 @@ function Hero2({
           </div>
         </div>
 
-        <div className="bg-white relative -top-28 w-[65%] mx-auto py-11 pl-22">
+        <div className="bg-white relative -top-28 w-[90%] xl:w-[65%] mx-auto p-3 m-0 md:p-11 xl:pl-22">
           <div className="">
-            <div className="flex flex-col xl:m-0 pr-[20%]">
-              <h4 className="text-black text-1 m-4 mx-8 font-bold">{date}</h4>
-              <h3 className="text-black text-3xl m-4 mx-8 font-bold">
+            <div className="flex flex-col md:m-0 xl:pr-[20%]">
+              <h4 className="text-black m-0 p-0 mb-8 text-xs md:text-1 md:m-4 md:mx-8 md:font-bold">{date}</h4>
+              <h3 className="text-black text-md text-center md:text-left md:text-2xl md:m-4 md:mx-8 md:mb-2 font-bold">
                 {smallHeaderText}
               </h3>
-              <h2 className="text-black text-7xl m-4 line-clamp-4 mx-8 font-bold">
+              <h2 className="text-black text-2xl md:text-6xl text-center md:text-left m-4 md:line-clamp-4 mx-8 mt-0 font-bold">
                 {headerText}
               </h2>
-              <p className="text-black text-2xl m-4 mx-8 pr-[20%]">{text}</p>
+              <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 md:pr-[20%]">{text}</p>
             </div>
           </div>
         </div>
