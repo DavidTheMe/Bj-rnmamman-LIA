@@ -2,8 +2,6 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero2 from "./components/Hero2";
-import TextBox from "./components/TextBox";
-// import { PuffGrid } from "./patterns/PuffGrid";
 import { ColoredPuffGrid } from "./patterns/ColoredPuffGrid";
 import { ImagePuffGrid } from "./patterns/ImagePuffGrid";
 import { WidePuffGrid } from "./patterns/WidePuffGrid";
@@ -22,15 +20,8 @@ function App() {
         imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
         // videoUrl="https://www.youtube.com/watch?v=F5gFwiFIViQ"
       />
-      <main className="grow flex flex-col items-center justify-center text-center">
-        <TextBox
-          title="Lorem ipsum"
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
-        />
-        <TextBox
-          title=""
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
-        />
+
+      <main className="grow flex flex-col items-center justify-center text-center" role="main">
 
         {/* Black and white puff */}
         <div className="w-full max-w-6xl mx-auto px-4 mt-10 mb-10">
@@ -108,17 +99,6 @@ function App() {
             ]}
           />
         </div>
-
-        <TextBox
-          title="Lorem ipsum"
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
-        />
-
-        <TextBox
-          title=""
-          text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
-        />
-
         <Footer role="contentinfo" aria-label="Sidfot" />
       </main>
     </div>

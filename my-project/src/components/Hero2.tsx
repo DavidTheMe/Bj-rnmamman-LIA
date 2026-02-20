@@ -48,6 +48,7 @@ function Hero2({
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="bg-white relative -top-28 w-[90%] xl:w-[65%] mx-auto p-3 m-0 md:p-11 xl:pl-22">
           <div className="">
             <div className="flex flex-col md:m-0 xl:pr-[20%]">
@@ -60,6 +61,15 @@ function Hero2({
               </h2>
               <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 md:pr-[20%]">{text}</p>
             </div>
+=======
+        <div className="bg-white relative -top-40 w-[80%] mx-auto">
+          <div className="flex flex-col lg:m-0">
+            <h2 className="text-black text-center text-4xl m-4 line-clamp-4 mx-8 font-bold">
+              {headerText}
+            </h2>
+
+            <h3 className="text-black text-center text-xl m-4 mx-8">{text}</h3>
+>>>>>>> 53c02602867b8f48ca0f286aa1e9c33b5ca78a87
           </div>
         </div>
       </div>

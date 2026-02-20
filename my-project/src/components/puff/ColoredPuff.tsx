@@ -1,5 +1,6 @@
 import { ArrowRight } from '../icons/ArrowRight';
 
+// Moa
 type ColoredPuffProps = {
     label: string;
     title: string;
