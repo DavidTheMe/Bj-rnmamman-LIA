@@ -36,9 +36,9 @@ function Hero2({
                 className="inline-flex items-center gap-2 text-black p-5 font-bold justify-self-end"
               >
                 <img
-                  src="src/assets/images/blackArrowLeft.png"
+                  src="../assets/images/blackArrowLeft.png"
                   className="h-4 w-4 justify-self-start"
-                  alt="arrow"
+                  alt="Arrow"
                 />
                 <p className="justify-self-end pl-2">
                 {navButtonText}
