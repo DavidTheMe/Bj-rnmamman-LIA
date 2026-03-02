@@ -49,13 +49,18 @@ function Hero2({
           </div>
         </div>
 
-        <div className="bg-white relative -top-40 w-[80%] mx-auto">
-          <div className="flex flex-col lg:m-0">
-            <h2 className="text-black text-center text-4xl m-4 line-clamp-4 mx-8 font-bold">
-              {headerText}
-            </h2>
-
-            <h3 className="text-black text-center text-xl m-4 mx-8">{text}</h3>
+        <div className="bg-white relative -top-28 w-[90%] xl:w-[65%] mx-auto p-3 m-0 md:p-11 xl:pl-22">
+          <div className="">
+            <div className="flex flex-col md:m-0 xl:pr-[20%]">
+              <h4 className="text-black m-0 p-0 mb-8 text-xs md:text-1 md:m-4 md:mx-8 md:font-bold">{date}</h4>
+              <h3 className="text-black text-md text-center md:text-left md:text-2xl md:m-4 md:mx-8 md:mb-2 font-bold">
+                {smallHeaderText}
+              </h3>
+              <h2 className="text-black text-2xl md:text-6xl text-center md:text-left m-4 md:line-clamp-4 mx-8 mt-0 font-bold">
+                {headerText}
+              </h2>
+              <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 ">{text}</p>
+            </div>
           </div>
         </div>
       </div>
