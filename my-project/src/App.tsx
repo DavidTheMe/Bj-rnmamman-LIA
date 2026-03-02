@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Hero1 from "./components/Hero1";
 import Hero2 from "./components/Hero2";
 import TextBox from "./components/TextBox";
 // import { PuffGrid } from "./patterns/PuffGrid";
@@ -10,8 +11,15 @@ import { WidePuffGrid } from "./patterns/WidePuffGrid";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <body className="min-h-screen flex flex-col max-w-[1920px] justify-self-center">
       <Header />
+      {/* <Hero1
+      text = "Vi hjälper er att både etablera och utveckla er verksamhet i Skellefteåområdet"
+      navButtonText="Läs mer"
+      navDestination="e"
+      videoUrl="https://www.youtube.com/watch?v=TviBukuxiDw"
+      imgLink="https://stadsbyggnad.org/wp-content/uploads/sites/2/2022/05/skelleftea-880-700x466.jpg"
+      /> */}
       <Hero2
         date="2020-12-22"
         smallHeaderText="Case Stories"
@@ -121,7 +129,7 @@ function App() {
 
         <Footer role="contentinfo" aria-label="Sidfot" />
       </main>
-    </div>
+    </body>
   );
 }
 
