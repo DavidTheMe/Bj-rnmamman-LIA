@@ -1,4 +1,5 @@
 import "../App.css";
+import arrow from "../assets/images/blackArrowLeft.png";
 
 type HeroProps = {
   headerText: string;
@@ -36,9 +37,9 @@ function Hero2({
                 className="inline-flex items-center gap-2 text-black p-5 font-bold justify-self-end"
               >
                 <img
-                  src="src/assets/images/blackArrowLeft.png"
+                  src={arrow}
                   className="h-4 w-4 justify-self-start"
-                  alt="arrow"
+                  alt="Arrow"
                 />
                 <p className="justify-self-end pl-2">
                 {navButtonText}
@@ -59,7 +60,7 @@ function Hero2({
               <h2 className="text-black text-2xl md:text-6xl text-center md:text-left m-4 md:line-clamp-4 mx-8 mt-0 font-bold">
                 {headerText}
               </h2>
-              <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 md:pr-[20%]">{text}</p>
+              <p className="text-black md:text-2xl text-center md:text-left m-0 m-4 md:mx-8 ">{text}</p>
             </div>
 =======
         <div className="bg-white relative -top-40 w-[80%] mx-auto">
