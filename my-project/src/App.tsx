@@ -13,14 +13,14 @@ function App() {
   return (
     <body className="min-h-screen flex flex-col max-w-[1920px] justify-self-center">
       <Header />
-      {/* <Hero1
+      <Hero1
       text = "Vi hjälper er att både etablera och utveckla er verksamhet i Skellefteåområdet"
       navButtonText="Läs mer"
       navDestination="e"
       videoUrl="https://www.youtube.com/watch?v=TviBukuxiDw"
       imgLink="https://stadsbyggnad.org/wp-content/uploads/sites/2/2022/05/skelleftea-880-700x466.jpg"
-      /> */}
-      <Hero2
+      />
+      {/* <Hero2
         date="2020-12-22"
         smallHeaderText="Case Stories"
         headerText="Campus Skellefteå säkerställer framtidens kunskapsbehov"
@@ -29,7 +29,7 @@ function App() {
         navDestination="Lorem Ipsum "
         imgLink="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/230000/230134-Skelleftea.jpg"
         // videoUrl="https://www.youtube.com/watch?v=F5gFwiFIViQ"
-      />
+      /> */}
       <main className="grow flex flex-col items-center justify-center text-center">
         <TextBox
           title="Lorem ipsum"
