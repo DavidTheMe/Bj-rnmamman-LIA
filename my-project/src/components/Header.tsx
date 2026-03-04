@@ -15,9 +15,8 @@ function Header() {
           </a>
 
           <div className="justify-center flex-grow hidden md:flex">
-            <NavButton buttonText="Om oss" href="om-oss" />
+            <NavButton buttonText="Hem" href="/" />
             <NavButton buttonText="Nyheter" href="nyheter" />
-            <NavButton buttonText="Kontakt" href="kontakt" />
           </div>
 
           <div className=" bg-[#985A1C] hover:bg-[#B87F45] m-3 space-y-2 rounded p-4 shadow md:hidden " onClick={() => setMenuOpen(!menuOpen)}>
@@ -29,9 +28,8 @@ function Header() {
 
           {menuOpen && (
             <div className="md:hidden flex flex-col gap-3 bg-black px-6 pb-4 w-full text-center">
-              <NavButton buttonText="Om oss" href="om-oss" />
+              <NavButton buttonText="Hem" href="/" />
               <NavButton buttonText="Nyheter" href="nyheter" />
-              <NavButton buttonText="Kontakt" href="kontakt" />
             </div>
           )}
 
